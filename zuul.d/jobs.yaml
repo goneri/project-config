@@ -116,6 +116,8 @@
     parent: build-ansible-collection
     description: |
       Generate content and Build ansible collections and return artifacts to zuul
+    dependencies:
+      - name: build-ansible-collection
     pre-run: playbooks/generate-ansible-collection/pre.yaml
 
 - job:
